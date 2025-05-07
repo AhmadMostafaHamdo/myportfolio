@@ -87,16 +87,24 @@ const Header = ({ setTranslate }) => {
               />
             </li>
             <li>
-              <Link to="/#about">About</Link>
+              <Link to="/#about" onClick={() => setTranslate("about")}>
+                About
+              </Link>
             </li>
             <li>
-              <Link to="/#project">Projects</Link>
+              <Link to="/#project" onClick={() => setTranslate("project")}>
+                Projects
+              </Link>
             </li>
             <li>
-              <Link to="/#education">Education</Link>
+              <Link to="/#education" onClick={() => setTranslate("education")}>
+                Education
+              </Link>
             </li>
             <li>
-              <Link to="/#skills">Skills</Link>
+              <Link to="/#skills" onClick={() => setTranslate("skills")}>
+                Skills
+              </Link>
             </li>
           </ul>
         </div>
