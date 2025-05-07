@@ -1,0 +1,121 @@
+/* Skills */
+:root {
+  --bg-color: #081b29;
+  --second-bg-color: #112e42;
+  --text-color: #ededed;
+  --main-color: #00abf0;
+}
+.skills {
+  min-height: auto;
+  padding-bottom: 7rem;
+}
+.skills h2 {
+  position: relative;
+  display: inline-block;
+  transform: translateX(-50%);
+  left: 50%;
+  margin-bottom: 20px;
+}
+.skills h2 span {
+  font-size: 25px;
+  color: var(--main-color);
+}
+.skills .skills-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5rem;
+}
+.skills-row .skills-column {
+  flex: 1 1 40rem;
+}
+.skills-column .skills-box {
+  position: relative;
+}
+.skills-box .skills-content {
+  position: relative;
+  border: 0.2rem solid var(--main-color);
+  border-radius: 0.6rem;
+  padding: 0.5rem 1.5rem;
+  z-index: 1;
+  overflow: hidden;
+  width: 85%;
+  margin: auto;
+}
+.skills-content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: var(--bg-color);
+  z-index: -1;
+  transition: 0.3s;
+}
+.skills-content:hover::before {
+  width: 100%;
+}
+
+.skills-content .progress {
+  padding: 1rem 0;
+}
+.skills-content .progress h3 {
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.light .skills-content .progress h3 {
+  color: rgb(82 82 91);
+}
+.skills-content .progress h3 span {
+  color: var(--text-color);
+}
+.skills-content .progress .bar {
+  height: 1.5rem;
+  border-radius: 0.6rem;
+  border: 0.1rem solid var(--main-color);
+  padding: 0.4rem;
+  margin: 1rem 0;
+}
+.skills-content .progress .bar span {
+  display: block;
+  height: 100%;
+  border-radius: 0.3rem;
+  background: var(--main-color);
+}
+.light .skills-content .progress h3 span {
+  color: rgb(82 82 91);
+}
+.skills-column:nth-child(1) .skills-content .progress:nth-child(1) .bar span {
+  width: 80%;
+}
+.skills-column:nth-child(1) .skills-content .progress:nth-child(2) .bar span {
+  width: 75%;
+}
+.skills-column:nth-child(1) .skills-content .progress:nth-child(3) .bar span {
+  width: 75%;
+}
+.skills-column:nth-child(1) .skills-content .progress:nth-child(4) .bar span {
+  width: 75%;
+}
+.skills-column:nth-child(1) .skills-content .progress:nth-child(5) .bar span {
+  width: 70%;
+}
+.skills-column:nth-child(1) .skills-content .progress:nth-child(6) .bar span {
+  width: 80%;
+}
+.skills-column:nth-child(1) .skills-content .progress:nth-child(7) .bar span {
+  width: 90%;
+}
+.skills-column:nth-child(1) .skills-content .progress:nth-child(8) .bar span {
+  width: 70%;
+}
+/* media */
+@media (max-width: 575px) {
+  .skills-box .skills-content {
+    width: 100%;
+  }
+  .skills-content .progress h3 {
+    font-size: 16px;
+  }
+}

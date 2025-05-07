@@ -1,0 +1,115 @@
+:root {
+  --bg-color: #081b29;
+  --second-bg-color: #112e42;
+  --text-color: #ededed;
+  --main-color: #00abf0;
+}
+/* ===========================
+ table of contents
+==============================
+1. Left Section
+2. Right Section ==> animation*/
+
+section.hero {
+  margin-top: 3rem;
+}
+
+/* ========================
+    1. Left Section
+=========================== */
+section.hero .parent-avatar.flex {
+  align-items: end;
+  gap: 0.6rem;
+  min-height: 88px;
+}
+
+section.hero .left-section {
+  flex-grow: 1;
+}
+
+section.hero .icon-verified {
+  color: var(--blue);
+  font-size: 1.1rem;
+  margin-bottom: 0.3rem;
+}
+
+section.hero .avatar {
+  width: 88px;
+
+  border-radius: 50%;
+  border: 1px solid darkorange;
+  padding: 1px;
+  box-shadow: 2px 2px 40px rgba(203, 200, 200, 0.586) inset;
+}
+section.hero .text-anmite {
+  position: relative;
+  width: 32.8rem;
+  width: fit-content;
+}
+section.hero h1.title{ 
+  position: relative;
+  opacity: 1;
+  width: 45vw;
+  font-size: 34px;
+  margin: 15px;
+  font-weight: 700;
+  color: transparent;
+  -webkit-text-stroke: .7px var(--main-color);
+  background-image: linear-gradient(var(--main-color),var(--main-color));
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  background-position: 0 0;
+}
+
+section.hero h1.title{
+  animation: home-bg-text 6s linear infinite;
+  animation-delay: 2s;
+}
+@keyframes home-bg-text {
+  0% {
+      background-position: -70vw;
+  }
+
+  100%{
+      background-position: 0;
+  }
+}
+section.hero p.sub-title {
+  color: var(--subtitle);
+  font-size: 0.9rem;
+  line-height: 1.65rem;
+  margin-bottom: 32px;
+}
+
+section.hero .all-icons {
+  font-size: 1.3rem;
+  gap: 1.5rem;
+  color: var(--subtitle);
+}
+
+section.hero .all-icons .icon:hover {
+  font-size: 1.4rem;
+  transition: 0.3s;
+  cursor: pointer;
+  color: var(--icon-hover);
+}
+
+/* ===================================
+    2. Right Section ==> animation
+====================================== */
+section.hero .animation {
+  width: 100%;
+  translate: 100px 55px;
+}
+
+@media (max-width: 1250px) {
+  section.hero .animation {
+    display: none;
+  }
+}
+@media (max-width: 575px) {
+  section.hero h1.title {
+    font-size: 1.7rem;
+    width: 80vw;
+  }
+}
