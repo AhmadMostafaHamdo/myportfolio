@@ -87,16 +87,16 @@ const Header = ({ setTranslate }) => {
               />
             </li>
             <li>
-              <Link to="/">About</Link>
+              <Link to="/#about">About</Link>
             </li>
             <li>
-              <Link to="/">Projects</Link>
+              <Link to="/#project">Projects</Link>
             </li>
             <li>
-              <Link to="/">Education</Link>
+              <Link to="/#education">Education</Link>
             </li>
             <li>
-              <Link to="/">Skills</Link>
+              <Link to="/#skills">Skills</Link>
             </li>
           </ul>
         </div>
