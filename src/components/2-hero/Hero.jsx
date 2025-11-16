@@ -3,6 +3,7 @@ import "./hero.css";
 import devAnimation from "../../animation/dev.json";
 import { useRef } from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   const lottieRef = useRef();
@@ -15,7 +16,7 @@ const Hero = () => {
             initial={{ transform: "scale(0)" }}
             animate={{ transform: "scale(1.1)" }}
             transition={{ damping: 6, type: "spring", stiffness: 100 }}
-            src="./me.jpg"
+            src="./personal.jpg"
             className="avatar"
             alt=""
           />
@@ -31,18 +32,17 @@ const Hero = () => {
           FrontEnd Developer
         </motion.h1>
         <div className="text-animate">
-                <h3>Front-End Developer</h3> 
-                <span className="animate"></span>
-            </div>  
+          <h3>Front-End Developer</h3>
+          <span className="animate"></span>
+        </div>
         <p className="sub-title">
-          I’m Ahmad Hamdo, a front-end developer in lattakia
-          City. 
+          I’m Ahmad Hamdo, a front-end developer in lattakia City.
         </p>
 
         <div className="all-icons flex">
-          <div className="icon icon-instagram"></div>
-          <div className="icon icon-github"></div>
-          <div className="icon icon-linkedin"></div>
+          <Link to="https://www.linkedin.com/in/ahmad-hamdo-669b97388/" target="_blank">
+            <div className="icon icon-linkedin"></div>
+          </Link>
         </div>
       </div>
 
@@ -51,7 +51,6 @@ const Hero = () => {
           lottieRef={lottieRef}
           className=""
           onLoadedImages={() => {
-      
             lottieRef.current.setSpeed(0.5);
           }}
           animationData={devAnimation}

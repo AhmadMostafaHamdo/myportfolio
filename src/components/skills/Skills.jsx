@@ -1,4 +1,5 @@
 import "./skills.css";
+
 const Skills = () => {
   return (
     <section className="skills" id="skills">
@@ -10,6 +11,7 @@ const Skills = () => {
         <div className="skills-column">
           <div className="skills-box">
             <div className="skills-content">
+              {/* Existing Skills */}
               <div className="progress">
                 <h3>
                   React <span>80%</span>
@@ -28,7 +30,7 @@ const Skills = () => {
               </div>
               <div className="progress">
                 <h3>
-                  Framer-motion<span>75%</span>
+                  Framer-motion <span>75%</span>
                 </h3>
                 <div className="bar">
                   <span></span>
@@ -68,7 +70,57 @@ const Skills = () => {
               </div>
               <div className="progress">
                 <h3>
-                  Bootstarp <span>70%</span>
+                  Bootstrap <span>70%</span>
+                </h3>
+                <div className="bar">
+                  <span></span>
+                </div>
+              </div>
+              <div className="progress">
+                <h3>
+                  Tailwind CSS <span>80%</span>
+                </h3>
+                <div className="bar">
+                  <span></span>
+                </div>
+              </div>
+              <div className="progress">
+                <h3>
+                  JWT <span>90%</span>
+                </h3>
+                <div className="bar">
+                  <span></span>
+                </div>
+              </div>
+
+              {/* Additional Frontend Skills */}
+              <div className="progress">
+                <h3>
+                  TypeScript <span>70%</span>
+                </h3>
+                <div className="bar">
+                  <span></span>
+                </div>
+              </div>
+              <div className="progress">
+                <h3>
+                  Git <span>85%</span>
+                </h3>
+                <div className="bar">
+                  <span></span>
+                </div>
+              </div>
+              <div className="progress">
+                <h3>
+                  VS Code <span>90%</span>
+                </h3>
+                <div className="bar">
+                  <span></span>
+                </div>
+              </div>
+              <div className="progress">
+                <h3>
+                  Figma <span>75%</span>
                 </h3>
                 <div className="bar">
                   <span></span>
@@ -81,4 +133,5 @@ const Skills = () => {
     </section>
   );
 };
+
 export default Skills;

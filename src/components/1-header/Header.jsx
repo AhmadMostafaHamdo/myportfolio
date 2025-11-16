@@ -19,7 +19,7 @@ const Header = ({ setTranslate }) => {
   }, [theme]);
 
   return (
-    <header className="  flex">
+    <header className="flex">
       <button
         onClick={() => {
           setshowModal(true);

@@ -25,7 +25,7 @@ const Main = () => {
   return (
     <main className="flex">
       <section className="flex  left-section" id="project">
-      <button
+        <button
           onClick={() => {
             setcurrentActive("all");
             setArr(myProjects);
@@ -68,21 +68,17 @@ const Main = () => {
 
                 <div style={{ width: "266px" }} className="box">
                   <h1 className="title">{item.projectTitle}</h1>
-                  <p className="sub-title">
-                    {item.desc}
-                  </p>
+                  <p className="sub-title">{item.desc}</p>
 
                   <div className="flex icons">
                     <div style={{ gap: "11px" }} className="flex">
-                      <Link to={item.link}>
+                      <Link to={item.link} target="_blank">
                         <div className="icon-link"></div>
                       </Link>
-                      <Link to={item.code}>
-                        <div className="icon-github"></div>
-                      </Link>
+                      <Link to={item.code}></Link>
                     </div>
 
-                    <Link to={item.link} className="link flex">
+                    <Link to={item.link} className="link flex" target="_blank">
                       more
                       <span
                         style={{ alignSelf: "end" }}
@@ -101,4 +97,3 @@ const Main = () => {
 };
 
 export default Main;
-
